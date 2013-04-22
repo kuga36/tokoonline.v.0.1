@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+	<title>Form Produk</title>
+
+	<meta charset="utf-8">
+	<title>Bootstrap, from Twitter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<link  href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<style type="text/css">
+				body { padding-top: 60px; padding-bottom: 40px; }
+			</style>
+
+<link href="../css/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+<script src="../js/jquery.min.js"></script>
+<script src="../css/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			
+				<a class="brand" href="#"> Toko Online </a>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+	
+
+		<!-- Example row of columns -->
+		<div class="row">
+			<div class="span4">
+				<h2>Manajemen Produk</h2>
+				<p>Manajemen Produk dapat berupa pengelolaan stok produk, harga produk, pembelian dan penjualan</p>
+				
+			</div>
+			<div class="span8">
+				<form method="post" action="produk.php">
+					<label for="namaproduk">Nama Produk</label>
+					<input type="text" name="namaproduk" class="">
+					<label for="idkategori">Kategori Produk</label>
+					<select name="idkategori">
+						<option value="1">CD Tutorial</option>
+						<option value="2">Software</option>
+						<option value="3">Buku</option>
+						<option value="4">Hardware</option>
+					</select>
+					<input type="submit" value="Submit" >
+				</form>
+
+			</div>
+		</div>
+		<hr>
+
+		<footer>
+			<p>&copy; Company 2012</p>
+		</footer>
+
+	</div> <!-- /container -->
+
+	
+</body>
+
+</html>
