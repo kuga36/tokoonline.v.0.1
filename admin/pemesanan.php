@@ -1,16 +1,6 @@
 <?php
-	require_once('config.php');
-
-	//koneksi php mysql_connect('localhost','root','');
-
-	$connect=@mysql_connect($host,$dbuser,$dbpass);
-	if(!($connect)){
-		echo mysql_error();
-	}else{
-		//koneksi ke database mysql_select_db('tokoonline');
-		@mysql_select_db($dbname) or die('Database tidak tersedia');
-		//echo "koneksi  berhasil";
-	}
+	require_once('koneksi.php');
+	include_once('header.php');
 
 	//menampilkan data produk
 	$sql="select * from produk";
@@ -21,8 +11,7 @@
 	//mendapatkan jumlah baris/row
 	$numrow=@mysql_num_rows($result);
 	?>
-	
-	<table cellpadding="0" cellspacing="0" border="1">
+<?php include_once('table-tambahan.swi');?>
 		<thead>
 			<tr>
 				<th>No</th>

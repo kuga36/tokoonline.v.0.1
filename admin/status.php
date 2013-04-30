@@ -1,6 +1,6 @@
 <?php
 	require_once('koneksi.php');
-
+	include_once('header.php');
 
 
 //menampilkan data produk
@@ -12,8 +12,7 @@
 	//mendapatkan jumlah baris/row
 	$numrow=@mysql_num_rows($result);
 	?>
-
-	<table cellpadding="0" cellspacing="0" border="1">
+<?php include_once('table-tambahan.swi');?>
 		<thead>
 			<tr>
 				<th>ID Status</th>
@@ -51,7 +50,7 @@
 			echo "<td>".$row['deskripsi']."</td>";
 
 			//cetak aksi
-			echo "<td> <a href='#'>Edit</a> <a href='#'>Hapus</a></td>";
+			echo "<td> <a class='btn btn-success btn-mini' href='#'><icon class='icon-pencil'></icon> Edit</a> <a href='#'>Hapus</a></td>";
 			echo "</tr>";
 			$i++;
 		}

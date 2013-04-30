@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Demo JS</title>
+	
+</head>
+<body>
+	<div class="span3">
+                <div id="form_input" class="">
+                                <form action="http://192.168.0.99/ci-dev/status/submit" method="post" accept-charset="utf-8" id="addform" class="form form-vertical">                    
+                    <input type="hidden" value='' id="idstatus" name="idstatus">
+                    
+                    <div class="control-group">
+                            <label for="status" class="control-label">status : </label>                            <div class="controls">
+                                <input type="text" name="status" value="" id="status" />                            </div>
+                    </div>
+                    
+                    <div class="control-group">
+                            <label for="parent" class="control-label">parent : </label>                            <div class="controls">
+                                <input type="text" name="parent" value="" id="parent" />                            </div>
+                    </div>
+                    
+                    <div class="control-group">
+                            <label for="deskripsi" class="control-label">deskripsi : </label>                            <div class="controls">
+                                <input type="text" name="deskripsi" value="" id="deskripsi" />                            </div>
+                    </div>
+                    
+                    <div class="control-group">
+                            <label for="datetime" class="control-label">datetime : </label>                            <div class="controls">
+                                <input type="text" name="datetime" value="" id="datetime" />                            </div>
+                    </div>
+                    
+                    <button id="save" type="submit" class="btn btn-success"><icon class="icon-plus-sign"></icon> Add New</button>
+                    <button id="save_edit" type="submit" class="btn btn-primary" style="display:none;"><icon class="icon-refresh"></icon> Update</button>
+
+                    </form>                 </div>
+            </div>
+</body>
+</html>

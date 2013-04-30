@@ -27,7 +27,16 @@ require_once('koneksi.php');
 			<option value="<?php echo $row['idkategori']?>"><?php echo $row['namakategori'];?> </option>
 
 			<? endwhile; ?>
-		</select><?php endif;?>
+		</select>
+
+	<?php endif;?>
+			
+
+
+
+
+
+
 			<input type="submit" value="Submit" >
 		<input type="text" name="pabrikan" class="">
 		<label for="pabrikan">Pabrikan</label>
